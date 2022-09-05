@@ -1,0 +1,325 @@
+body{
+    background-color: white;
+}
+
+nav{
+    background-color: #200e11;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+
+.nav-link.active{
+    color: #D55D73 !important;
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #D55D73;
+    cursor: pointer;
+}
+
+.slideImg{
+    height: 100vh;
+}
+
+#itemImage{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 250px;
+}
+
+.my-colored-layer{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 9;
+}
+
+.my-layer{
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    animation: carousel-move-title 2s ease-in-out;
+}
+@keyframes carousel-move-title {
+    0% {left: 100%;}
+    100% {left: 0%;}
+}
+.animatedIcon{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background-color: transparent;
+    border: 1px solid white !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;  
+    width: 2rem;
+    height: 3rem;
+}
+.dotted{
+    position: absolute;
+    bottom: 90px;
+    height: 0%;
+    left: 0px;
+    right: -2px;
+    z-index: 10;
+    animation: move-dotted 1s infinite alternate ease-in-out;
+}
+@keyframes move-dotted {
+    0% {bottom: 90px;}
+    0% {opacity: 1;}
+    100% {bottom: 60px;}
+    100% {opacity: 0.5;}
+}
+.dotted p{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #fff;
+    animation: move-dotted 1s infinite alternate ease-in-out;
+}
+.my-layer h2{
+    color: #F8F9FA;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.member:hover img{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+.member:hover .member-layer{
+    visibility: visible;
+    opacity: 0.9;
+    transition: all 0.5s ease-in-out;
+
+}
+.member:hover h4{
+    color: #ED6563;
+}
+
+.member-layer{
+    background-color: #726767da;
+    opacity: 0.5;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    visibility: hidden;
+    transition: all ease-in-out;
+}
+.social-member-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* services */
+.fas ,.far{
+    margin: 0%;
+    padding: 0%;
+    line-height: 0 !important;
+}
+
+.service-icon{
+    color: #ED6563;
+    font-size: 1.75rem;
+}
+
+.service-item:hover h4{
+    color: #ED6563;
+}
+.fs-10{
+    font-size: 60px;
+    font-weight: 900;
+}
+.summary-section{
+    background-image: url(../images/dotted-map.png);
+    background-size: contain;
+    background-color: black;
+}
+.summary-icon{
+    width: 3rem;
+    height: 3rem;
+}
+
+.mybtn{
+    color: #777;
+    border: 1px solid #777;
+    transition: all 0.3s;
+    margin: 2px;
+}
+.mybtn:hover{
+    border-color: #DC3545;
+    color: #DC3545;
+    background-color: transparent;
+}
+.footer-row a{
+    text-decoration: none;
+    color: #777
+}
+.footer-row a:hover{
+    transition: all 0.3s;
+    color: #DC3545 !important;
+    cursor: pointer;
+}
+.header-body{
+    z-index: 3;
+}
+
+.w-10{
+    width: 5rem;
+}
+/* About Section */
+.title h3::after{
+    content: "";
+    position: absolute;
+    top: 6rem;
+    left: 27%;
+    bottom: 0%;
+    width: 3rem;
+    height: 0.1rem;
+    background-color: black;
+}
+.title:hover h3::after{
+    width: 3.5rem;
+}
+
+.head-title{
+    width: 15rem;
+    
+}
+
+.title h2 {
+    font-size: 5rem;
+    color: #ccc;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 1;
+}
+.title h3 {
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+}
+.bg-color{
+    background-color: #F8F9FA;
+}
+.progress{
+    height: 4px;
+    animation: progress-move 2s ease-in-out;
+}
+@keyframes progress-move {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+.progress-bar{
+    background-color: #DC3545;
+}
+.sett-icon
+{
+    position: absolute;
+    position: fixed;
+    z-index: 800000;
+    top: 20%;
+    background-color: black;
+    color: white;
+    left: 0%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sett-icon i{
+    font-size: 1rem;
+}
+
+.footer-bg{
+    background-color: #1A1A1A;
+}
+.social-icon{
+    color: white;
+}
+.social-icon:hover{
+    color: #DC3545;
+}
+.image-layer{
+    background-image: url("../images/slideshow-3.jpg");
+    z-index: 3;
+}
+.color-layer{
+    opacity: 0.2;
+    color: tomato;
+}
+
+/* Slider */
+.layer {
+
+    bottom    : -50px;
+    left      : 15px;
+    right     : 15px;
+    margin    : auto;
+    opacity   : 0;
+    transition: opacity 0.5s, bottom 0.5s;
+}
+
+.item {
+    cursor: pointer;
+}
+
+.item:hover .layer {
+    opacity: 1;
+    bottom : 15px;
+}
+
+#boxContainer {
+    background-color: rgba(0, 0, 0, 0.4);
+    position        : fixed;
+    top             : 5%;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    display         : none;
+    justify-content : center;
+    align-items     : center;
+}
+.loader{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    
+}
+#boxInner {
+    height: 400px;
+    background-image: url(../images/portfolio-1.jpg);
+    background-size : cover;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+#boxInner i {
+    font-size: 30px;
+    cursor   : pointer;
+}
+#imgDetails{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
